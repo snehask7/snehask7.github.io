@@ -1,0 +1,54 @@
+.aboutheading {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  border-bottom: 3px solid #622aff;
+  color: #622aff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 9rem;
+}
+.About {
+  background-color: black;
+  overflow: hidden;
+  height: 100vh;
+  padding: 10px;
+}
+
+.AboutSection {
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 3px solid #00adb5;
+  margin-top: 25vh;
+}
+
+.aboutInfo {
+  color: white;
+  text-align: justify;
+  padding-top: 2em;
+  font-size: 20px;
+}
+.ProfilePic {
+  width: 25em;
+}
+
+@media (max-width: 767px) {
+  .aboutheading {
+    font-size: 2rem;
+    width: 6rem;
+  }
+  .ProfilePic {
+    width: 15em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .AboutSection {
+    padding: 1rem;
+  }
+  .aboutInfo {
+    font-size: 15px;
+  }
+}

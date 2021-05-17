@@ -1,0 +1,12 @@
+.c {
+  width: 5em;
+  height: 5em;
+  cursor: pointer;
+  border-radius: 19px;
+  will-change: transform, opacity;
+}
+
+.front,
+.back {
+  background-size: cover;
+}

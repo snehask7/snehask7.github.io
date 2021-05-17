@@ -1,0 +1,73 @@
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.home {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+  height: 100vh;
+}
+
+.hiText {
+  font-size: 60px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+.hiText2 {
+  font-size: 50px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+.name {
+  background: linear-gradient(to right, #647dee 0%, #7f53ac 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hidiv {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40vh;
+}
+@media (max-width: 767px) {
+  .hiText {
+    font-size: 30px;
+  }
+  .hiText2 {
+    font-size: 25px;
+  }
+  .home {
+    padding: 1em;
+  }
+}

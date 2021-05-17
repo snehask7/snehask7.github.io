@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useEffect, useState } from "react";
+import { XlviLoader } from "react-awesome-loaders";
+import "./App.css";
+import Body from './components/Body';
+
 
 function App() {
+  const [load, upadateLoad] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      upadateLoad(false);
+    }, 2200);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      {
+        load ?
+          <header className="App-header">
+            <XlviLoader
+              className="fadeOut"
+              boxColors={["#00fff5", "#e94560", "#4f3b78"]}
+              desktopSize={"128px"}
+              mobileSize={"70px"}
+            />
+          </header>
+          : <Body></Body>
+      }
+
     </div>
   );
 }

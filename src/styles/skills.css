@@ -1,0 +1,94 @@
+.skillheading {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  border-bottom: 3px solid #622aff;
+  color: #622aff;
+  width: 7.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+.SkillSection {
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skillCards {
+  justify-content: center;
+}
+
+.skillimg {
+  border-radius: 19px;
+}
+.Skill {
+  background-color: black;
+}
+.skillCard {
+  text-align: center;
+  background-color: #2e2e2e;
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  border-radius: 20px;
+}
+
+.smallcard {
+  width: 24em;
+  height: 16em;
+  margin-top: 1em;
+}
+
+.bigcard {
+  width: 16em;
+  height: 34.5em;
+  margin-top: 1em;
+}
+.skillCard img {
+  margin-bottom: 2em;
+  width: 5em;
+}
+.skillcaption {
+  color: white;
+  margin-top: -20px;
+}
+@media screen and (min-width: 800px) {
+  .bigcard {
+    padding-top: 2em;
+  }
+}
+
+@media (max-width: 767px) {
+  .skillCard img {
+    margin-bottom: 1em;
+    width: 45px;
+    border-radius: 10px;
+  }
+  .smallcard {
+    width: 18em;
+    height: 10em;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: -10px;
+  }
+  .bigcard {
+    width: 12em;
+    height: 18em;
+    margin-top: 30px;
+    padding-top: -2em;
+  }
+  .skillcaption {
+    margin-top: -12px;
+  }
+}
+@media (max-width: 767px) {
+  .skillheading {
+    font-size: 2rem;
+    width: 5rem;
+  }
+  .SkillSection {
+    padding: 1rem;
+  }
+}

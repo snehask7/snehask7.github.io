@@ -1,0 +1,83 @@
+.projectheading {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  border-bottom: 3px solid #622aff;
+  color: #622aff;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.projectheading {
+  width: 12rem;
+  margin-bottom: 1em;
+}
+.Project {
+  height: 150vh;
+}
+.ProjectSection {
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projectInfo {
+  color: white;
+  text-align: justify;
+  font-size: 18px;
+}
+
+figcaption {
+  color: white;
+}
+
+.ProjectSection img {
+  width: 28em;
+  border-radius: 10px;
+}
+.projectrow {
+  margin-bottom: 4em;
+}
+.projectCarousel {
+  width: 120%;
+  height: 120%;
+  text-align: center;
+  margin-left: -10%;
+}
+.projectname {
+  color: #9370db;
+  font-size: 25px;
+}
+
+@media (max-width: 767px) {
+  .ProjectSection img {
+    width: 20em;
+    border-radius: 10px;
+  }
+  /* .projectCarousel {
+    margin-left: -15%;
+  } */
+  .projectrow {
+    margin-bottom: 2em;
+  }
+  .projectname {
+    color: #9370db;
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .projectheading {
+    font-size: 2rem;
+    width: 8rem;
+    margin-bottom: 4px;
+  }
+
+  .ProjectSection {
+    padding: 1rem;
+  }
+  .projectInfo {
+    font-size: 12px;
+  }
+}
