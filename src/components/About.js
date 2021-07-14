@@ -13,7 +13,7 @@ const About = () => {
           <Row >
             <Col style={{ textAlign: "center" }}> <img alt="avatar" className="ProfilePic" width="500" src={AboutImage}></img></Col>
             <Col ><div className="aboutInfo"><p >
-              My name is Sneha and I'm currently studying 3rd year Computer Science at SSN College of Engineering, Chennai. I am passionate towards designing and developing software applications.
+              My name is Sneha and I'm currently a final year Computer Science student at SSN College of Engineering, Chennai. I am passionate towards designing and developing software applications.
               </p></div></Col>
           </Row>
         </Container>
